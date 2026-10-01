@@ -1,0 +1,42 @@
+{
+  "name": "dsh-avatar-xq",
+  "version": "1.0.0",
+  "description": "Per-message avatars for DSH web: avatar on every assistant reply (left) and every user message (right), with a square crop dialog and live sliders for size, gap, radius and insets.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "dsh",
+    "avatar",
+    "profile",
+    "web-ui"
+  ],
+  "license": "MIT",
+  "engines": {
+    "dsh": ">=0.0.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-plugin-manager"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": ">=0.1.7-rc.1 <0.2.0",
+    "@deepseek-ai/cordis": "^4.0.1-rc.1"
+  }
+}

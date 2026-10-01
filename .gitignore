@@ -1,0 +1,12 @@
+# deps / build output
+node_modules/
+*.log
+
+# 本地开发时的手工备份（小琦改动留的，别提交）
+*.bak
+*.bak-*
+
+# 编辑器
+.DS_Store
+.idea/
+.vscode/
