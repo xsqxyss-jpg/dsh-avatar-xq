@@ -1,0 +1,8 @@
+# npm 打包时排除本地开发残留。
+# 注意：package.json 里的 files: ["lib"] 是白名单，优先级高于 .gitignore，
+# 所以光靠 .gitignore 挡不住这些文件，必须用 .npmignore。
+*.bak
+*.bak-*
+*.tgz
+.git/
+.gitignore

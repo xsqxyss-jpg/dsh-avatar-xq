@@ -1,7 +1,6 @@
-# dsh-avatar-xq bundle patch：向 web 组合挂载 dsh-avatar-xq。
+# dsh-avatar bundle patch：向 web 组合挂载 dsh-avatar。
 # host 半（/api/dsh-avatar 配置读写）+ client 半（__ModuleLoader__ 设置页 + 头像 CSS），
 # 都由官方 bundle 流程解析，无需手动开 entry。
-# 已用 `dsh plugin --profile web add`（本地路径 link 模式）安装。
 - insert:
-    - id: dsh-avatar-xq
-      name: dsh-avatar-xq
+    - id: dsh-avatar
+      name: dsh-avatar
