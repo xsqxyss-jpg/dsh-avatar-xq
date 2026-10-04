@@ -1,4 +1,4 @@
-# dsh-avatar
+# dsh-avatar-xq
 
 给 [DSH](https://github.com/deepseek-ai/deepseek-harness)（DeepSeek Harness）网页版对话挂上头像：助手头像在每条回复左侧，你的头像在每条消息右侧。设置面板里自带配置页，改完即时生效，不用重启。
 
@@ -21,21 +21,21 @@
 ## 安装
 
 ```bash
-dsh plugin --profile web add github:xsqyyss-jpg/dsh-avatar
+dsh plugin --profile web add github:xsqyyss-jpg/dsh-avatar-xq
 ```
 
 或者从本地目录装（把路径换成你自己下载的位置）：
 
 ```bash
-dsh plugin --profile web add /path/to/dsh-avatar
+dsh plugin --profile web add /path/to/dsh-avatar-xq
 
 # Windows
-dsh plugin --profile web add D:\path\to\dsh-avatar
+dsh plugin --profile web add D:\path\to\dsh-avatar-xq
 ```
 
 装完**重启 dsh**（或等 profile `patchReload: live` 生效）生效。
 
-> 安装时如果提示 `declares no dsh.bundle`，手动把插件名 `dsh-avatar` 加进
+> 安装时如果提示 `declares no dsh.bundle`，手动把插件名 `dsh-avatar-xq` 加进
 > `profiles/web/package.json` 的 `dsh.profile.bundles` 数组——不登记就不会加载。
 
 ### 环境要求
@@ -57,7 +57,7 @@ dsh plugin --profile web add D:\path\to\dsh-avatar
 | 圆角 | 0 = 方形，一半 = 胶囊，拉满 = 正圆 |
 | 助手头像离左边框 / 你的头像离右边框 | 0–32px 微调 |
 
-图片存在 `$DSH_HOME/storages/dsh-avatar/config.json`，**不进代码库**，随时可换。默认占位是运行时生成的灰白剪影 SVG（零网络、零版权素材）。
+图片存在 `$DSH_HOME/storages/dsh-avatar-xq/config.json`，**不进代码库**，随时可换。默认占位是运行时生成的灰白剪影 SVG（零网络、零版权素材）。
 
 ## 实现要点
 

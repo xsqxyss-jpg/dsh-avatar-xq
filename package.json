@@ -1,5 +1,5 @@
 {
-  "name": "dsh-avatar",
+  "name": "dsh-avatar-xq",
   "version": "1.0.0",
   "description": "Per-message avatars for DSH web: avatar on every assistant reply (left) and every user message (right), with a square crop dialog and live sliders for size, gap, radius and insets.",
   "type": "module",
