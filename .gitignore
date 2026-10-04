@@ -1,6 +1,7 @@
 # deps / build output
 node_modules/
 *.log
+*.tgz
 
 # 本地开发时的手工备份（别提交）
 *.bak
